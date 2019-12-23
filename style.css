@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'sitka';
+    src: url('sitka-small-599.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #36476C;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper::before {
+    content: '';
+    position: fixed;
+    left: -22%;
+    top: 60%;
+    right: 0;
+    width: 125%;
+    height: 100%;
+    background: linear-gradient(135deg, #8843AE, 6%, #fff 100%);
+    transform: rotate(15deg);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 32px 0;
+    width: 380px;
+    z-index: 1;
+}
