@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+
+
 </head>
 
 <body id="page-top">
@@ -37,63 +42,63 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-                <a class="nav-link" href="home.html">
+                <a class="nav-link" href="../home.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="hr.html">
+                <a class="nav-link" href="../hr.html">
                     <i class="fas fa-users-cog"></i> <span>Human Resource</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="aktifitaskebun.html">
+                <a class="nav-link" href="../aktifitaskebun.html">
                     <i class="fas fa-carrot"></i> <span>Aktifitas Kebun</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="transport.html">
+                <a class="nav-link" href="../transport.html">
                     <i class="fas fa-tractor"></i> <span>Transport Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="workshop.html">
+                <a class="nav-link" href="../workshop.html">
                     <i class="fas fa-cog"></i> <span>Workshop Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="payroll.html">
+                <a class="nav-link" href="../payroll.html">
                     <i class="fas fa-money-bill-alt"></i> <span>Payroll Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="procurment.html">
+                <a class="nav-link" href="../procurment.html">
                     <i class="fas fa-shopping-cart"></i> <span>Procurment Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="inventory.html">
+                <a class="nav-link" href="../inventory.html">
                     <i class="fas fa-box"></i> <span>Inventory Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="fixasset.html">
+                <a class="nav-link" href="../fixasset.html">
                     <i class="fas fa-landmark"></i> <span>Fix Asset Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="sales.html">
+                <a class="nav-link" href="../sales.html">
                     <i class="fas fa-store"></i> <span>Sales Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="finance.html">
+                <a class="nav-link" href="../finance.html">
                     <i class="fas fa-receipt"></i> <span>Finance Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="accounting.html">
+                <a class="nav-link" href="../accounting.html">
                     <i class="fas fa-calculator"></i> <span>Accounting Module</span>
                 </a>
             </li>
@@ -192,12 +197,191 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Human Resource</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Master Karyawan</h1>
                     </div>
-                    <div class="row">
+                    <div class="row" id="myform">
                         <div class="col-xl-3 col-md-6 mb-4">
-
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">NIK</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
                         </div>
+                        <div class="col-xl-6 col-md-6 mb-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Nama</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <label for="exampleFormControlSelect2">Jenis Kelamin</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                    <option selected="true" disabled="disabled">Pilih</option>
+                                    <option>Pria</option>
+                                    <option>Wanita</option>
+                                </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Tanggal Lahir</label>
+                                <input type="date" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Tempat Lahir</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control">
+                                        <option selected=" true " disabled="disabled ">Pilih</option>
+                                        <option>Jakarta</option>
+                                        <option>Bogor</option>
+                                        <option>Depok</option>
+                                        <option>Bandung</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">Agama</label>
+                            <select class="form-control " id="exampleFormControlSelect1 ">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+
+                                    <option>Islam</option>
+                                    <option>Kristen</option>
+                                    <option>Hindu</option>
+                                    <option>Buddha</option>
+                                    <option>Konghucu</option>
+                                </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">Nomor Tlpn</label>
+                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">Pendidikan</label>
+                            <select class="form-control " id="exampleFormControlSelect1 ">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>S1</option>
+                                    <option>SMA</option>
+                                    <option>SMP</option>
+                                    <option>SD</option>
+                                </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">Jabatan</label>
+                            <select class="form-control " id="exampleFormControlSelect1 ">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">St Nikah</label>
+                            <select class="form-control " id="exampleFormControlSelect1 ">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">Tanggungan</label>
+                            <select class="form-control " id="exampleFormControlSelect1 ">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                </select>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">Golongan Darah</label>
+                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">Nomor NPWP</label>
+                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">Tanggal Masuk Kerja</label>
+                                <input type="date" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4  ">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">TMK</label>
+                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="fungsibpjs()">
+                                <label class="form-check-label " for="exampleCheck1">BPJS Kesehatan</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="fungsibpjstk()">
+                                <label class="form-check-label " for="exampleCheck1">BPJS TK</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label " for="exampleCheck1">Lembur</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4 ">
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4  " style="display: none;" id="bpjsk">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">Nomor BPJS Kesehatan</label>
+                                <input type="text" class="form-control " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4  " style="display: none;" id="bpjstk">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1 ">Nomor BPJS TK</label>
+                                <input type="text" class="form-control " aria-describedby="emailHelp ">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12 mb-4 ">
+
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1 ">Alamat</label>
+                                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Profinsi</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control">
+                                        <option selected=" true " disabled="disabled ">Pilih</option>
+                                        <option>Jakarta</option>
+                                        <option>Jawa Barat</option>
+                                        <option>Sumatra Utara</option>
+                                        <option>Sumatra Barat</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Kota</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control">
+                                        <option selected=" true " disabled="disabled ">Pilih</option>
+                                        <option>Jakarta</option>
+                                        <option>Bogor</option>
+                                        <option>Depok</option>
+                                        <option>Bandung</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-primary btn-lg " style="margin-bottom: 10px;" onclick="hore()">Submit</button>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
@@ -206,9 +390,9 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
+            <footer class="sticky-footer bg-white ">
+                <div class="container my-auto ">
+                    <div class="copyright text-center my-auto ">
                         <span>Copyright &copy; Your Website 2019</span>
                     </div>
                 </div>
@@ -222,44 +406,76 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Anda yakin ingin keluar??</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+    <div class="modal fade " id="logoutModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Anda yakin ingin keluar??</h5>
+                    <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">×</span>
                     </button>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                    <a class="btn btn-primary" href="login.html">Keluar</a>
+                <div class="modal-footer ">
+                    <button class="btn btn-secondary " type="button " data-dismiss="modal ">Batal</button>
+                    <a class="btn btn-primary " href="login.html ">Keluar</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js "></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js "></script>
 
     <!-- Page level plugins -->
-    <script src="../vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/chart.js/Chart.min.js "></script>
 
     <!-- Page level custom scripts -->
-    <script src="../js/demo/chart-area-demo.js"></script>
-    <script src="../js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js "></script>
+    <script src="../js/demo/chart-pie-demo.js "></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js "></script>
+    <script>
+        function fungsibpjs() {
+            var x = document.getElementById("bpjsk");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function fungsibpjstk() {
+            var x = document.getElementById("bpjstk");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function hore() {
+            Swal.fire(
+                'Berhasil!',
+                'Data berhasil di tambahkan!',
+                'success'
+            );
+            document.getElementById('myform').reset();
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 </body>
 
