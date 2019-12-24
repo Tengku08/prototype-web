@@ -203,189 +203,60 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Master Karyawan</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Izin Karyawan</h1>
                     </div>
                     <div class="row" id="myform">
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">NIK</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">NIK</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>1301164881048</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-md-6 mb-4">
+                        <div class="col-xl-8 col-md-6 mb-4">
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4" id="hiddensz" style="display: none;">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Nama</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1">
+                                <input type="text" class="form-control" id="exampleInputPassword1" disabled value="Tengku Muhammad Kamil">
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <label for="exampleFormControlSelect2">Jenis Kelamin</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected="true" disabled="disabled">Pilih</option>
-                                <option>Pria</option>
-                                <option>Wanita</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4" id="hiddens" style="display: none;">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Tanggal Lahir</label>
+                                <label for="exampleInputPassword1">Jabatan</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" disabled value="A">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4" id="hiddensx" style="display: none;">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Tanggal Masuk Kantor</label>
+                                <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Tanggal Izin</label>
                                 <input type="date" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="form-group ">
-                                <label for="exampleFormControlSelect2">Tempat Lahir</label>
-                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control">
-                                    <option selected=" true " disabled="disabled ">Pilih</option>
-                                    <option>Jakarta</option>
-                                    <option>Bogor</option>
-                                    <option>Depok</option>
-                                    <option>Bandung</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <label for="exampleFormControlSelect2 ">Agama</label>
+                        <div class="col-xl-4 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">Jenis Izin</label>
                             <select class="form-control " id="exampleFormControlSelect1 ">
                                 <option selected=" true " disabled="disabled ">Pilih</option>
-
-                                <option>Islam</option>
-                                <option>Kristen</option>
-                                <option>Hindu</option>
-                                <option>Buddha</option>
-                                <option>Konghucu</option>
+                                <option>Telat</option>
+                                <option>Tidak Hadir</option>
                             </select>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Nomor Tlpn</label>
-                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <label for="exampleFormControlSelect2 ">Pendidikan</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>S1</option>
-                                <option>SMA</option>
-                                <option>SMP</option>
-                                <option>SD</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <label for="exampleFormControlSelect2 ">Jabatan</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>A</option>
-                                <option>B</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <label for="exampleFormControlSelect2 ">St Nikah</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>A</option>
-                                <option>B</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <label for="exampleFormControlSelect2 ">Tanggungan</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>A</option>
-                                <option>B</option>
-                            </select>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Golongan Darah</label>
-                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Nomor NPWP</label>
-                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Tanggal Masuk Kerja</label>
-                                <input type="date" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4  ">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">TMK</label>
-                                <input type="text" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp ">
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="fungsibpjs()">
-                                <label class="form-check-label " for="exampleCheck1">BPJS Kesehatan</label>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="fungsibpjstk()">
-                                <label class="form-check-label " for="exampleCheck1">BPJS TK</label>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label " for="exampleCheck1">Lembur</label>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4 ">
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4  " style="display: none;" id="bpjsk">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Nomor BPJS Kesehatan</label>
-                                <input type="text" class="form-control " aria-describedby="emailHelp ">
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4  " style="display: none;" id="bpjstk">
-                            <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Nomor BPJS TK</label>
-                                <input type="text" class="form-control " aria-describedby="emailHelp ">
-                            </div>
                         </div>
                         <div class="col-xl-12 col-md-12 mb-4 ">
-
                             <div class="form-group ">
-                                <label for="exampleFormControlTextarea1 ">Alamat</label>
+                                <label for="exampleFormControlTextarea1 ">Keterangan</label>
                                 <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="form-group ">
-                                <label for="exampleFormControlSelect2">Profinsi</label>
-                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control">
-                                    <option selected=" true " disabled="disabled ">Pilih</option>
-                                    <option>Jakarta</option>
-                                    <option>Jawa Barat</option>
-                                    <option>Sumatra Utara</option>
-                                    <option>Sumatra Barat</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="form-group ">
-                                <label for="exampleFormControlSelect2">Kota</label>
-                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control">
-                                    <option selected=" true " disabled="disabled ">Pilih</option>
-                                    <option>Jakarta</option>
-                                    <option>Bogor</option>
-                                    <option>Depok</option>
-                                    <option>Bandung</option>
-                                </select>
-                            </div>
-                        </div>
                     </div>
+
                     <div class="text-right">
                         <button type="submit" class="btn btn-primary btn-lg " style="margin-bottom: 10px;" onclick="hore()">Submit</button>
                     </div>
@@ -453,8 +324,20 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js "></script>
     <script>
-        function fungsibpjs() {
-            var x = document.getElementById("bpjsk");
+        function hiddenmuncul() {
+            var x = document.getElementById("hiddens");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddensz");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddensx");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
@@ -462,8 +345,20 @@
             }
         }
 
-        function fungsibpjstk() {
-            var x = document.getElementById("bpjstk");
+        function hiddenmuncul1() {
+            var x = document.getElementById("hiddens1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddensz1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddensx1");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
