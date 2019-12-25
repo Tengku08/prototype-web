@@ -47,7 +47,7 @@
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="../hr.html">
                     <i class="fas fa-users-cog"></i> <span>Human Resource</span>
                 </a>
@@ -57,7 +57,7 @@
                     <i class="fas fa-carrot"></i> <span>Aktifitas Kebun</span>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link" href="../transport.html">
                     <i class="fas fa-tractor"></i> <span>Transport Module</span>
                 </a>
@@ -203,7 +203,7 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Sakit</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Transaksi transport</h1>
                     </div>
                     <div class="row" id="myform">
                         <div class="col-xl-4 col-md-6 mb-4">
@@ -235,42 +235,94 @@
                                 <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4" id="hiddensx" style="display: none;">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Tanggal Sakit</label>
+                                <label for="exampleInputPassword1">Tanggal Transaksi</label>
                                 <input type="date" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Tanggal Selesai Sakit</label>
-                                <input type="date" class="form-control" id="exampleInputPassword1" value="Tengku Muhammad Kamil">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Kode Kendaraan</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenkend()">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>Kend-A</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-xl-12 col-md-12 mb-4 ">
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group" id="hiddennamkend" style="display: none;">
+                                <label for="exampleInputPassword1">Nama Kendaraan</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" disabled value="Kendaraan A">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group" id="hiddenkendz" style="display: none;">
+                                <label for="exampleInputPassword1">Nomor Plat</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" disabled value="B 1234 AB">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="form-group ">
-                                <label for="exampleFormControlTextarea1 ">Jenis Sakit</label>
-                                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                                <label for="exampleFormControlSelect2">Blok</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenblok()">
+                                    <option selected=" true " disabled="disabled ">Pilih</option>
+                                    <option>BLOK A</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group" id="hiddensbatch" style="display: none;">
+                                <label for="exampleInputPassword1">Batch</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" disabled value="Batch A">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4 ">
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4 ">
+                            <label for="exampleFormControlSelect2 ">Nama Bahan</label>
+                            <select class="form-control " id="exampleFormControlSelect1 ">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>Bahan A</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group " id="hiddenqty" style="display: none;">
+                                <label for="exampleFormControlTextarea1 ">Qty</label>
+                                <input type="number" class="form-control" id="tambah">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group " id="hiddenqty" style="display: none;">
+                                <label for="exampleFormControlTextarea1 ">BBM</label>
+                                <input type="number" class="form-control" id="tambah">
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-6 mb-4">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Nomor Surat Berobat</label>
+                                <label for="exampleInputPassword1">Jam Kerja </label>
+                                <input type="time" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1 ">Jam Selesai</label>
+                                <input type="time" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1 ">HM AWAL</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1 ">HM AKHIR</label>
                                 <input type="text" class="form-control" id="exampleInputPassword1">
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Biaya</label>
-                                <input type="number" class="form-control" id="biaya" oninput="biaya()">
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Claim</label>
-                                <input type="number" class="form-control" id="claim" max="0">
-                            </div>
-                        </div>
+
                     </div>
 
                     <div class="text-right">
@@ -340,13 +392,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js "></script>
     <script>
-        function biaya() {
-            var x = document.getElementById("biaya").value;
-            document.getElementById('claim').value = x;
-            document.getElementById('claim').max = x;
-
-        }
-
         function hiddenmuncul() {
             var x = document.getElementById("hiddens");
             if (x.style.display === "none") {
@@ -368,6 +413,82 @@
             }
         }
 
+        function hiddenkend() {
+            var x = document.getElementById("hiddennamkend");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddenkendz");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+
+        }
+
+        function hiddenblok() {
+            var x = document.getElementById("hiddensbatch");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+
+        function tambah() {
+            var x = document.getElementById("tambah").value;
+            document.getElementById("total").value = 1000 * x;
+        }
+
+        function hiddenbahan() {
+            var x = document.getElementById("hiddenqty");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddennominal");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+            var x = document.getElementById("hiddentotal");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+
+        }
+
+        function hiddenmuncul1() {
+            var x = document.getElementById("hiddens1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddensz1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            var x = document.getElementById("hiddensx1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
         function hore() {
             Swal.fire(

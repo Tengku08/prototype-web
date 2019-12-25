@@ -11331,8 +11331,3 @@ body.sidebar-toggled footer.sticky-footer {
 .button-custom {
     cursor: pointer;
 }
-
-.bootstrap-select.btn-group .dropdown-menu li a:hover {
-    color: whitesmoke !important;
-    background: #bf5279 !important;
-}
