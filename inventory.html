@@ -202,12 +202,12 @@
                     </div>
                     <div class="row">
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="button-custom card border-left-primary shadow h-100 py-2 " onclick="window.location.href='inventory/masterbarang.html'">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Master Barang/Bahan</div>
+                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Master Barang/Bahan
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-box fa-2x text-gray-300"></i>
@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="button-custom card border-left-primary shadow h-100 py-2" data-toggle="modal" data-target="#modalpenerimaan">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
@@ -232,7 +232,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="button-custom card border-left-primary shadow h-100 py-2" data-toggle="modal" data-target="#modalpengeluaran">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
@@ -251,7 +251,8 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Aging Account Payable</div>
+                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Aging Account Payable
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-money-check-alt fa-2x text-gray-300"></i>
@@ -336,22 +337,121 @@
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <div class="modal fade" id="modalpenerimaan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Penerimaan Barang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Tanggal Transaksi</label>
+                            <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">No.Doc</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlSelect2">Supplier</label>
+                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>Supplier 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4 ">
+                        <div class="form-group ">
+                            <label for="exampleFormControlTextarea1 ">Keterangan</label>
+                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlSelect2">Penerima</label>
+                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>2313114414112</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='inventory/penerimaanbarang.html'">Save changes</button>
+                </div>
+            </div>
+        </div>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    </div>
+    <div class="modal fade" id="modalpengeluaran" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pengeluaran Barang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Tanggal Transaksi</label>
+                            <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlSelect2">Pemohon</label>
+                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>2313114414112</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4 ">
+                        <div class="form-group ">
+                            <label for="exampleFormControlTextarea1 ">Keterangan</label>
+                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='inventory/pengeluaranbarang.html'">Save changes</button>
+                </div>
+            </div>
+        </div>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+
+
+
 
 </body>
 
