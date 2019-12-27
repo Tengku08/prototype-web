@@ -11331,3 +11331,7 @@ body.sidebar-toggled footer.sticky-footer {
 .button-custom {
     cursor: pointer;
 }
+
+.ikon {
+    font-size: 30px;
+}
