@@ -202,7 +202,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="button-custom card border-left-primary shadow h-100 py-2" data-toggle="modal" data-target="#modaltransaksi">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
@@ -322,6 +322,97 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="modaltransaksi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Transaksi Finance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Tanggal Transaksi</label>
+                            <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlSelect2">Mata Uang</label>
+                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>Rupiah</option>
+                                <option>Dolar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Rate</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">No .Cek/Bilyet</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlSelect2">Diterima oleh</label>
+                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>2313114414112</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlSelect2">Diberikan Ke</label>
+                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>3412421421412</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Kode Bank</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Nomor Rekening</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Keterangan</label>
+                            <input type="time" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-md-12 mb-4 ">
+                        <div class="form-group ">
+                            <label for="exampleFormControlTextarea1 ">Keterangan</label>
+                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='finance/transaksi.html'">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
