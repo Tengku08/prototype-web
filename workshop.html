@@ -261,7 +261,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" data-toggle="modal">
+                            <div class="button-custom py-2 border" data-toggle="modal" data-target="#biayaworkshop">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -334,92 +334,116 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="modaltransaksi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="biayaworkshop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Transaksi Workshop</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Biaya Workshop</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                    <div class="col-xl-12 col-md-12 mb-4">
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Tanggal Transaksi</label>
-                            <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                            <label for="exampleInputPassword1">Periode</label>
+                            <input type="month" class="form-control" id="exampleInputPassword1">
                         </div>
                     </div>
-                    <div class="col-xl-12 col-md-12 mb-4">
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2">Mekanik 1</label>
-                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>1301164881048</option>
-                            </select>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='workshop/biayaworkshop.html'">Save changes</button>
                     </div>
-                    <div class="col-xl-12 col-md-12 mb-4">
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2">Mekanik 2</label>
-                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>2313114414112</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-md-12 mb-4">
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2">Mekanik 3</label>
-                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>3412421421412</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-md-6 mb-4">
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2">Kode Kendaraan</label>
-                            <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenkend()">
-                                <option selected=" true " disabled="disabled ">Pilih</option>
-                                <option>Kend-A</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 mb-4">
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Jam Kerja </label>
-                            <input type="time" class="form-control" id="exampleInputPassword1">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="window.location.href='workshop/transaksi.html'">Save changes</button>
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <div class="modal fade" id="modaltransaksi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Transaksi Workshop</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Tanggal Transaksi</label>
+                                <input type="date" class="form-control" id="exampleInputPassword1" disabled value="2019-12-24">
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Mekanik 1</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>1301164881048</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Mekanik 2</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>2313114414112</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Mekanik 3</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenmuncul()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>3412421421412</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-6 mb-4">
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2">Kode Kendaraan</label>
+                                <select class="selectpicker form-control " id="exampleFormControlSelect1" data-live-search="true" data-style="form-control" onchange="hiddenkend()">
+                                <option selected=" true " disabled="disabled ">Pilih</option>
+                                <option>Kend-A</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Jam Kerja </label>
+                                <input type="time" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='workshop/transaksi.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 
