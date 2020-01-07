@@ -10,10 +10,17 @@
     <meta name="author" content="">
     <title>Prototype - Dashboard</title>
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" rel="stylesheet">
+
+
+
 </head>
 
 <body id="page-top">
@@ -37,68 +44,68 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-                <a class="nav-link" href="home.html">
+                <a class="nav-link" href="../home.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="hr.html">
+                <a class="nav-link" href="../hr.html">
                     <i class="fas fa-users-cog"></i> <span>Human Resource</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="aktifitaskebun.html">
+                <a class="nav-link" href="../aktifitaskebun.html">
                     <i class="fas fa-carrot"></i> <span>Aktifitas Kebun</span>
                 </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="transport.html">
+                <a class="nav-link" href="../transport.html">
                     <i class="fas fa-tractor"></i> <span>Transport Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="workshop.html">
+                <a class="nav-link" href="../workshop.html">
                     <i class="fas fa-cog"></i> <span>Workshop Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="payroll.html">
+                <a class="nav-link" href="../payroll.html">
                     <i class="fas fa-money-bill-alt"></i> <span>Payroll Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="procurment.html">
+                <a class="nav-link" href="../procurment.html">
                     <i class="fas fa-shopping-cart"></i> <span>Procurment Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="inventory.html">
+                <a class="nav-link" href="../inventory.html">
                     <i class="fas fa-box"></i> <span>Inventory Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="fixasset.html">
+                <a class="nav-link" href="../fixasset.html">
                     <i class="fas fa-landmark"></i> <span>Fix Asset Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="sales.html">
+                <a class="nav-link" href="../sales.html">
                     <i class="fas fa-store"></i> <span>Sales Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="finance.html">
+                <a class="nav-link" href="../finance.html">
                     <i class="fas fa-receipt"></i> <span>Finance Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="accounting.html">
+                <a class="nav-link" href="../accounting.html">
                     <i class="fas fa-calculator"></i> <span>Accounting Module</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="approval.html">
+                <a class="nav-link" href="../approval.html">
                     <i class="fas fa-check-square"></i>
                     <span>Approval</span>
                 </a>
@@ -198,96 +205,56 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Transport Module</h1>
+                        <h1 class="h3 mb-0 text-gray-800"> PT. XXX <br> Periode Desember 2019 <br> LHM TRANSPORT <br>
+                        </h1>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border " onclick="window.location.href='transport/masteralat.html'">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2 mr-2">
-                                            <i class="fas fa-cog ikon text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
+                    <div class="row" id="myform">
+                        <div class="col-xl-12 col-md-12 mb-4">
+                            Hektar -
 
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Master <br> Alat/Mesin</div>
-                                        </div>
+                            <table id="table_id" class="display nowrap" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" rowspan="2">Tanggal</th>
+                                        <th class="text-center" rowspan="2">Jenis Kegiatan</th>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border " onclick="window.location.href='transport/transaksi.html'">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2 mr-2">
-                                            <i class="fas fa-file-invoice-dollar ikon text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Transaksi <br> <span style="color: #fff;">a</span></div>
-                                        </div>
+                                        <th class="text-center" colspan="4">Jam Operasi</th>
+                                        <th class="text-center" rowspan="2">Hasil Kerja</th>
+                                        <th class="text-center" colspan="4">Jam Lembur</th>
+                                        <th class="text-center" rowspan="2">Hasil Kerja</th>
+                                        <th class="text-center" colspan="2">BBM</th>
+                                        <th class="text-center" rowspan="2">Keterangan</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">Awal</th>
+                                        <th class="text-center">Akhir</th>
+                                        <th class="text-center">JML (min)</th>
+                                        <th class="text-center">HM</th>
+                                        <th class="text-center">Awal</th>
+                                        <th class="text-center">Akhir</th>
+                                        <th class="text-center">JML (min)</th>
+                                        <th class="text-center">HM</th>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2 mr-2">
-                                            <i class="fas fa-desktop ikon text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Monitoring <br> <span style="color: #fff;">a</span></div>
-                                        </div>
+                                        <th class="text-center">Jenis</th>
+                                        <th class="text-center">JML (ltr)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border " onclick="window.location.href='transport/lhmtransport.html'">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2 mr-2">
-                                            <i class="fas fa-copy ikon text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">LHM Transport <br> <span style="color: #fff;">a</span></div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#biayatransport">
-                            <div class="button-custom py-2 border">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-2 mr-2">
-                                            <i class="fas fa-truck-loading ikon text-gray-300"></i>
-                                        </div>
-                                        <div class="col mr-2">
-                                            <div class="h4 mb-0 font-weight-bold text-gray-800">Biaya Transport <br> <span style="color: #fff;">a</span></div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+                    <!-- /.container-fluid -->
                 </div>
-                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
+            <footer class="sticky-footer bg-white ">
+                <div class="container my-auto ">
+                    <div class="copyright text-center my-auto ">
                         <span>Copyright &copy; Your Website 2019</span>
                     </div>
                 </div>
@@ -301,71 +268,70 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Anda yakin ingin keluar??</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+    <div class="modal fade " id="logoutModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Anda yakin ingin keluar??</h5>
+                    <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">×</span>
                     </button>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                    <a class="btn btn-primary" href="login.html">Keluar</a>
+                <div class="modal-footer ">
+                    <button class="btn btn-secondary " type="button " data-dismiss="modal ">Batal</button>
+                    <a class="btn btn-primary " href="login.html ">Keluar</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="biayatransport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Biaya Transport</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="col-xl-12 col-md-12 mb-4">
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Periode</label>
-                            <input type="month" class="form-control" id="exampleInputPassword1">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="window.location.href='transport/biayatransport.html'">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js "></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js "></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js "></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/chart-area-demo.js "></script>
+    <script src="../js/demo/chart-pie-demo.js "></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
 
 
+    <script>
+        $(document).ready(function() {
+            $('#table_id').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel', 'pdf', 'print'
+                ],
+                "ordering": false,
+                "scrollX": true
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
-
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
-
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
-
+            });;
+        });
+    </script>
 </body>
 
 </html>
