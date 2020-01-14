@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Prototype - Dashboard</title>
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">Prototype</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider ">
+            <div class="sidebar-heading">
+                Menu
+            </div>
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="../home.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../hr.html">
+                    <i class="fas fa-users-cog"></i> <span>Human Resource</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../aktifitaskebun.html">
+                    <i class="fas fa-carrot"></i> <span>Aktifitas Kebun</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../transport.html">
+                    <i class="fas fa-tractor"></i> <span>Transport Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../workshop.html">
+                    <i class="fas fa-cog"></i> <span>Workshop Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../payroll.html">
+                    <i class="fas fa-money-bill-alt"></i> <span>Payroll Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../procurment.html">
+                    <i class="fas fa-shopping-cart"></i> <span>Procurment Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../inventory.html">
+                    <i class="fas fa-box"></i> <span>Inventory Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../fixasset.html">
+                    <i class="fas fa-landmark"></i> <span>Fix Asset Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../sales.html">
+                    <i class="fas fa-store"></i> <span>Sales Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../finance.html">
+                    <i class="fas fa-receipt"></i> <span>Finance Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../accounting.html">
+                    <i class="fas fa-calculator"></i> <span>Accounting Module</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="../approval.html">
+                    <i class="fas fa-check-square"></i>
+                    <span>Approval</span>
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+
+        </ul>
+        <!-- End of Sidebar -->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Penting
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">Laporan Barang Perlu Approval</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        Laporan Transport Perlu approval!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Ganti Password anda segera !
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tengku</span>
+                                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Aktifitas anda
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="index.html" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Keluar
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800"> PT. XXX <br> Periode Desember 2019 <br> Master Karyawan <br>
+                        </h1>
+                    </div>
+                    <div class="row" id="myform">
+                        <div class="col-xl-12 col-md-12 mb-4">
+                            <span style="font-size: 20px; font-weight: bold;">
+                                Kode : <br> Model : <br></span>
+                            <table id="table_id" class="display nowrap" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <td class="text-center">NIK</td>
+                                        <td class="text-center">Nama</td>
+                                        <td class="text-center">Alamat</td>
+                                        <td class="text-center">No. Telp</td>
+                                        <td class="text-center">Tempat Lahir</td>
+                                        <td class="text-center">Tgl. Lahir</td>
+                                        <td class="text-center">Agama</td>
+                                        <td class="text-center">J. Kelamin</td>
+                                        <td class="text-center">Pend</td>
+                                        <td class="text-center">Gol. Darah</td>
+                                        <td class="text-center">Tgl. Masuk</td>
+                                        <td class="text-center">Jabatan</td>
+                                        <td class="text-center">St. Kary</td>
+                                        <td class="text-center">Div</td>
+                                        <td class="text-center">St. Pajak</td>
+                                        <td class="text-center">NPWP</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0202001</td>
+                                        <td>Zainal</td>
+                                        <td></td>
+                                        <td>083173239553</td>
+                                        <td>DKI-Jakarta</td>
+                                        <td>08-02-96</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>S1</td>
+                                        <td></td>
+                                        <td>19/1/2018</td>
+                                        <td>Estate Manager</td>
+                                        <td>Staff</td>
+                                        <td>Kantor</td>
+                                        <td>K1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202002</td>
+                                        <td>Joko Prayitno</td>
+                                        <td></td>
+                                        <td>085279751414</td>
+                                        <td>Grobongan</td>
+                                        <td>03-06-90</td>
+                                        <td>Kristen</td>
+                                        <td>Laki-laki</td>
+                                        <td>SMP</td>
+                                        <td></td>
+                                        <td>22/11/2010</td>
+                                        <td>Assisten Kebun</td>
+                                        <td>Staff</td>
+                                        <td>Kantor</td>
+                                        <td>K1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202003</td>
+                                        <td> Usman</td>
+                                        <td></td>
+                                        <td>082226642880</td>
+                                        <td>Teluk Betung</td>
+                                        <td>05-08-65</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>02-02-15</td>
+                                        <td>Koord. Umum</td>
+                                        <td>Staff</td>
+                                        <td>Kantor</td>
+                                        <td>K3</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202004</td>
+                                        <td> Mulyadi</td>
+                                        <td></td>
+                                        <td>085384896989</td>
+                                        <td>Jawa Barat</td>
+                                        <td>03-04-70</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>SMP</td>
+                                        <td></td>
+                                        <td>23/3/2015</td>
+                                        <td>Security Kebun</td>
+                                        <td>Staff</td>
+                                        <td>Kantor</td>
+                                        <td>K3</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202005</td>
+                                        <td> Taufiq Mubarok</td>
+                                        <td></td>
+                                        <td>085767168113</td>
+                                        <td>Purworejo</td>
+                                        <td>22/7/1990</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>SMP</td>
+                                        <td></td>
+                                        <td>23/3/2015</td>
+                                        <td>Mandor Pemupukan</td>
+                                        <td>Staff</td>
+                                        <td>Pemupukan</td>
+                                        <td>BK</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202006</td>
+                                        <td> Sojak Sabinus W</td>
+                                        <td></td>
+                                        <td>081366876336</td>
+                                        <td>Nias</td>
+                                        <td>09-01-80</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>01-08-16</td>
+                                        <td>Mandor Perawatan</td>
+                                        <td>Staff</td>
+                                        <td>Perawatan</td>
+                                        <td>K3</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202007</td>
+                                        <td>Harianto</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Muara Bungo</td>
+                                        <td>12-12-85</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>02-06-17</td>
+                                        <td>Mandor Panen</td>
+                                        <td>Staff</td>
+                                        <td>Panen</td>
+                                        <td>TK</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202008</td>
+                                        <td>Fathurrozi</td>
+                                        <td></td>
+                                        <td>085788949298</td>
+                                        <td>Jawa Barat</td>
+                                        <td>09-01-94</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>S1</td>
+                                        <td></td>
+                                        <td>18/4/2019</td>
+                                        <td>Krani</td>
+                                        <td>Staff</td>
+                                        <td>Kantor</td>
+                                        <td>K1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202009</td>
+                                        <td>Ilham Maliki</td>
+                                        <td></td>
+                                        <td>085268244647</td>
+                                        <td>Jawa Barat</td>
+                                        <td>09-12-91</td>
+                                        <td>Islam</td>
+                                        <td>Laki-laki</td>
+                                        <td>S1</td>
+                                        <td></td>
+                                        <td>21/4/2019</td>
+                                        <td>Krani</td>
+                                        <td>Staff</td>
+                                        <td>Kantor</td>
+                                        <td>K1</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202010</td>
+                                        <td>Ratna Juwita</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>12-10-82</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>21/11/2018</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202011</td>
+                                        <td>Nurhayati</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>01-11-79</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>21/11/2018</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202012</td>
+                                        <td>Defri</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>01-01-00</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>22/11/2018</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202013</td>
+                                        <td>Nurjani</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>12-11-73</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>23/11/2018</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202014</td>
+                                        <td>Zukra</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>19/12/1966</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>29/22/2018</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202015</td>
+                                        <td>Rusdan badihi</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>16/10/1992</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>02-12-18</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202016</td>
+                                        <td>Hendra gunawan</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>05-05-00</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>02-12-18</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202017</td>
+                                        <td>Iswanto</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>18/3/1995</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>02-12-18</td>
+                                        <td>Pemanen</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202018</td>
+                                        <td>Hodijah</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>31/5/1985</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMP</td>
+                                        <td></td>
+                                        <td>02-01-19</td>
+                                        <td>T. Pemupukan</td>
+                                        <td>KHL</td>
+                                        <td>Pemupukan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202019</td>
+                                        <td>Indra</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>31/10/1994</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>14/1/2019</td>
+                                        <td>T. Pemupukan</td>
+                                        <td>KHL</td>
+                                        <td>Pemupukan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202020</td>
+                                        <td>Jondra</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>16/8/1982</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>17/1/2019</td>
+                                        <td>T. Pemupukan</td>
+                                        <td>KHL</td>
+                                        <td>Pemupukan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202021</td>
+                                        <td>Salbiah</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>06-05-80</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>14/2/2019</td>
+                                        <td>T. Pemupukan</td>
+                                        <td>KHL</td>
+                                        <td>Pemupukan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202022</td>
+                                        <td>Siti aminah</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>21/11/1978</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>11-02-19</td>
+                                        <td>T. Pemupukan</td>
+                                        <td>KHL</td>
+                                        <td>Pemupukan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202023</td>
+                                        <td>Ilhamudin</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>25/12/1975</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>04-02-19</td>
+                                        <td>Grading</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202024</td>
+                                        <td>Andre yansyah</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>16/8/1997</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>24/2/2019</td>
+                                        <td>Grading</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202025</td>
+                                        <td>Tamrin</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>08-10-74</td>
+                                        <td>Islam</td>
+                                        <td>Laki Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>06-03-19</td>
+                                        <td>Grading</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202026</td>
+                                        <td>Desi</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>01-01-91</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>08-04-19</td>
+                                        <td>Grading</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202027</td>
+                                        <td>Sarini</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>21/9/1980</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMP</td>
+                                        <td></td>
+                                        <td>08-04-19</td>
+                                        <td>Grading</td>
+                                        <td>KHT</td>
+                                        <td>Panen</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202028</td>
+                                        <td>Hadiman</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>16/8/1977</td>
+                                        <td>Islam</td>
+                                        <td>Laki-Laki</td>
+                                        <td>SMP</td>
+                                        <td></td>
+                                        <td>10-05-19</td>
+                                        <td>Perawatan</td>
+                                        <td>KHL</td>
+                                        <td>Perawatan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202029</td>
+                                        <td>Jamainah</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>12-04-77</td>
+                                        <td>Islam</td>
+                                        <td>Perempuan</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>10-05-19</td>
+                                        <td>Perawatan</td>
+                                        <td>KHL</td>
+                                        <td>Perawatan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202030</td>
+                                        <td>Syamsu</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Jawa Barat</td>
+                                        <td>25/7/1979</td>
+                                        <td>Islam</td>
+                                        <td>Laki-Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>10-05-19</td>
+                                        <td>Perawatan</td>
+                                        <td>KHL</td>
+                                        <td>Perawatan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202031</td>
+                                        <td>Romi</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>01-01-01</td>
+                                        <td>Islam</td>
+                                        <td>Laki-Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>15/5/2019</td>
+                                        <td>Perawatan</td>
+                                        <td>KHL</td>
+                                        <td>Perawatan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0202032</td>
+                                        <td>Nasrol</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>L. Ruso</td>
+                                        <td>19/5/1972</td>
+                                        <td>Islam</td>
+                                        <td>Laki-Laki</td>
+                                        <td>SMA</td>
+                                        <td></td>
+                                        <td>16/5/2019</td>
+                                        <td>Perawatan</td>
+                                        <td>KHL</td>
+                                        <td>Perawatan</td>
+                                        <td>K/0</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white ">
+                <div class="container my-auto ">
+                    <div class="copyright text-center my-auto ">
+                        <span>Copyright &copy; Your Website 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade " id="logoutModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Anda yakin ingin keluar??</h5>
+                    <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer ">
+                    <button class="btn btn-secondary " type="button " data-dismiss="modal ">Batal</button>
+                    <a class="btn btn-primary " href="login.html ">Keluar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js "></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js "></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js "></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js "></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/chart-area-demo.js "></script>
+    <script src="../js/demo/chart-pie-demo.js "></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#table_id').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excel', 'pdf', 'print'
+                ],
+                "ordering": false,
+                "scrollX": true
+
+            });;
+        });
+    </script>
+</body>
+
+</html>
