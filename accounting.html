@@ -313,7 +313,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/jurnal.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#jurnal">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -329,7 +329,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/persiapan.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#persiapan">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -345,7 +345,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/perawatan.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#perawatan">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -361,7 +361,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/panen.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#panen">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -378,7 +378,7 @@
                         </div>
 
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/biayaumum.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#biayaumum">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -394,7 +394,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/biayatransport.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#biayatransport">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -410,7 +410,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/biayaworkshop.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#biayaworkshop">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -426,7 +426,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/lapstok.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#lapstok">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -442,7 +442,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/fixasset.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#fixasset">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -458,7 +458,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/laporanagingp.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#laporanagingp">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -474,7 +474,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/laporanagingr.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#laporanagingr">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -717,6 +717,317 @@
         </div>
     </div>
 
+    <div class="modal fade" id="jurnal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Daftar Jurnal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/jurnal.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="persiapan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Persiapan Lahan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/persiapan.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="perawatan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Perawatan Lahan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/perawatan.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="panen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Panen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/panen.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="biayaumum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Biaya Umum</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/biayaumum.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="biayatransport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Biaya Transport</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/biayatransport.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="lapstok" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Laporan Stok </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/lapstok.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="biayaworkshop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Biaya Workshop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/biayaworkshop.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="fixasset" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fix Asset</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/fixasset.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="laporanagingr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Laporan Aging Receivabel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/laporanagingr.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="laporanagingp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Laporan Aging Payabel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/laporanagingp.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
