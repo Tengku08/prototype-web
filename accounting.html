@@ -249,7 +249,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/neraca.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#neraca">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -265,7 +265,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/labarugi.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#labarugi">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -281,7 +281,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/trialbalance.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#trialbalance">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -297,7 +297,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='accounting/gl.html'">
+                            <div class="button-custom button-custom py-2 border" data-toggle="modal" data-target="#gl">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2">
@@ -560,6 +560,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4 ">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Company A</option>
+                              <option>Company B</option>
+                              <option>Company C</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="col-xl-12 col-md-12 mb-4">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Kode Trans</label>
@@ -586,24 +597,142 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <div class="modal fade" id="neraca" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Neraca</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/neraca.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
 
-        <!-- Page level plugins -->
-        <script src="vendor/chart.js/Chart.min.js"></script>
+    <div class="modal fade" id="labarugi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Laba Rugi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/labarugi.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="trialbalance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Neraca Saldo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/trialbalance.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Page level custom scripts -->
-        <script src="js/demo/chart-area-demo.js"></script>
-        <script src="js/demo/chart-pie-demo.js"></script>
+    <div class="modal fade" id="gl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Buku Besar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='accounting/gl.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 

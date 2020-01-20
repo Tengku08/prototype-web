@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='finance/bukukas.html'">
+                            <div class="button-custom py-2 border" data-toggle="modal" data-target="#bukukas">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2"> <i class="fas fa-book-open ikon text-gray-300"></i>
@@ -232,7 +232,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='finance/bukubank.html'">
+                            <div class="button-custom py-2 border" data-toggle="modal" data-target="#bukubank">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2"> <i class="fas fa-book-open ikon text-gray-300"></i>
@@ -247,7 +247,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='finance/laporanagingp.html'">
+                            <div class="button-custom py-2 border" data-toggle="modal" data-target="#agingpayabel">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2"> <i class="fas fa-money-check-alt ikon text-gray-300"></i>
@@ -263,7 +263,8 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="button-custom py-2 border" onclick="window.location.href='finance/laporanagingr.html'">
+                            <div class="button-custom py-2 border" data-toggle="modal" data-target="#agingreciv">
+
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2 mr-2"> <i class="fas fa-sign-in-alt ikon text-gray-300"></i>
@@ -336,6 +337,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4 ">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Company A</option>
+                              <option>Company B</option>
+                              <option>Company C</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="col-xl-12 col-md-12 mb-4" id="hiddensx" style="display: none;">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Tanggal Transaksi</label>
@@ -410,6 +422,121 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" onclick="window.location.href='finance/transaksi.html'">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bukukas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Buku Kas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='finance/bukukas.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bukubank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Buku Bank</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='finance/bukubank.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="agingpayabel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aging Account Payable</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='finance/laporanagingp.html'">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="agingreciv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aging Account Receivable</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Company</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Company A</option>
+                                  <option>Company B</option>
+                                  <option>Company C</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='finance/laporanagingr.html'">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
